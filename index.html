@@ -29,7 +29,6 @@
     overflow-x: hidden;
   }
 
-  /* TOP NAV */
   .top-nav {
     position: sticky;
     top: 0;
@@ -71,10 +70,7 @@
   }
   .btn-add-habit:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(167,139,250,0.5); }
 
-  .view-tabs {
-    display: flex;
-    gap: 4px;
-  }
+  .view-tabs { display: flex; gap: 4px; }
 
   .view-tab {
     flex: 1;
@@ -93,10 +89,8 @@
     border-bottom-color: var(--accent);
   }
 
-  /* MAIN */
   .main { padding: 20px 16px 100px; max-width: 480px; margin: 0 auto; }
 
-  /* PERIOD NAV */
   .period-nav {
     display: flex;
     align-items: center;
@@ -128,7 +122,6 @@
     letter-spacing: 0.5px;
   }
 
-  /* HABIT CARD */
   .habit-card {
     background: var(--card);
     border-radius: var(--radius);
@@ -166,15 +159,6 @@
 
   .habit-icon { font-size: 1.2rem; }
 
-  .habit-stats {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--sub);
-  }
-
   .stat-pct {
     color: var(--accent3);
     font-size: 0.85rem;
@@ -186,11 +170,6 @@
     font-size: 0.85rem;
     font-weight: 800;
     display: flex; align-items: center; gap: 3px;
-  }
-
-  .habit-actions {
-    display: flex;
-    gap: 6px;
   }
 
   .btn-icon {
@@ -205,7 +184,6 @@
   }
   .btn-icon:hover { opacity: 1; background: var(--border); }
 
-  /* WEEK VIEW */
   .week-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -251,7 +229,6 @@
 
   .day-cell:hover { transform: scale(1.08); }
 
-  /* MONTH VIEW */
   .month-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -287,7 +264,6 @@
   }
 
   .month-day-cell.empty { background: transparent; cursor: default; }
-
   .month-day-cell:not(.empty):hover { transform: scale(1.1); }
 
   .month-card-footer {
@@ -309,7 +285,6 @@
     letter-spacing: 1px;
   }
 
-  /* YEAR VIEW */
   .year-habit { margin-bottom: 24px; }
 
   .year-habit-header {
@@ -352,7 +327,6 @@
 
   .year-cell:hover { transform: scale(1.3); }
 
-  /* MODAL */
   .modal-overlay {
     position: fixed;
     inset: 0;
@@ -384,9 +358,7 @@
     overflow-y: auto;
   }
 
-  .modal-overlay.open .modal {
-    transform: translateY(0);
-  }
+  .modal-overlay.open .modal { transform: translateY(0); }
 
   .modal-handle {
     width: 40px; height: 4px;
@@ -405,9 +377,7 @@
     background-clip: text;
   }
 
-  .form-group {
-    margin-bottom: 16px;
-  }
+  .form-group { margin-bottom: 16px; }
 
   .form-label {
     font-weight: 700;
@@ -435,11 +405,7 @@
 
   .form-input:focus { border-color: var(--accent); }
 
-  .color-picker-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+  .color-picker-row { display: flex; flex-wrap: wrap; gap: 10px; }
 
   .color-swatch {
     width: 36px; height: 36px;
@@ -470,11 +436,7 @@
 
   .color-swatch.selected::after { opacity: 1; }
 
-  .icon-picker-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
+  .icon-picker-row { display: flex; flex-wrap: wrap; gap: 8px; }
 
   .icon-btn {
     width: 40px; height: 40px;
@@ -545,51 +507,11 @@
     transition: all 0.15s;
   }
 
-  /* EMPTY STATE */
-  .empty-state {
-    text-align: center;
-    padding: 60px 20px;
-  }
-
+  .empty-state { text-align: center; padding: 60px 20px; }
   .empty-emoji { font-size: 3rem; margin-bottom: 16px; }
+  .empty-title { font-weight: 900; font-size: 1.2rem; color: var(--text); margin-bottom: 8px; }
+  .empty-sub { color: var(--sub); font-size: 0.9rem; font-weight: 600; margin-bottom: 24px; }
 
-  .empty-title {
-    font-weight: 900;
-    font-size: 1.2rem;
-    color: var(--text);
-    margin-bottom: 8px;
-  }
-
-  .empty-sub {
-    color: var(--sub);
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 24px;
-  }
-
-  /* STREAK BADGE */
-  .streak-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    background: linear-gradient(135deg, #fde68a, #f59e0b);
-    color: #78350f;
-    font-size: 0.72rem;
-    font-weight: 900;
-    padding: 2px 8px;
-    border-radius: 20px;
-  }
-
-  /* WEEK DATES */
-  .week-date-label {
-    text-align: center;
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 6px;
-  }
-
-  /* SYNC indicator */
   .sync-dot {
     width: 8px; height: 8px;
     border-radius: 50%;
@@ -613,7 +535,6 @@
     margin-bottom: 12px;
   }
 
-  /* TOAST */
   .toast {
     position: fixed;
     bottom: 90px;
@@ -637,7 +558,6 @@
     transform: translateX(-50%) translateY(0);
   }
 
-  /* SCROLLBAR */
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
@@ -669,7 +589,6 @@
   <div id="habits-container"></div>
 </div>
 
-<!-- ADD/EDIT MODAL -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
   <div class="modal">
     <div class="modal-handle"></div>
@@ -700,10 +619,12 @@
 
 <div class="toast" id="toast"></div>
 
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 
+<script>
+// ── Firebase init ──────────────────────────────────────────────
 const firebaseConfig = {
   apiKey: "AIzaSyA8gJffBqkwkPf7QHMpP8p11dIKDQA9q5w",
   authDomain: "habitos-f84a6.firebaseapp.com",
@@ -712,11 +633,18 @@ const firebaseConfig = {
   messagingSenderId: "130019777341",
   appId: "1:130019777391:web:bd045b460fd5f36fce669a"
 };
-const fbApp = initializeApp(firebaseConfig);
-const db = getFirestore(fbApp);
+
+let db;
+try {
+  firebase.initializeApp(firebaseConfig);
+  db = firebase.firestore();
+} catch(e) {
+  console.warn('Firebase init error:', e);
+}
+
 const DOC_ID = "default_user";
 
-// CONFIG
+// ── Config ─────────────────────────────────────────────────────
 const COLORS = [
   '#a78bfa','#f472b6','#34d399','#60a5fa',
   '#fb923c','#facc15','#f87171','#38bdf8',
@@ -731,7 +659,7 @@ const ICONS = [
   '📖','🗓️','💰','🧹','🤝','📵','🎓','🌍',
 ];
 
-// STATE
+// ── State ──────────────────────────────────────────────────────
 let habits = [];
 let checks = {};
 let currentView = 'week';
@@ -740,80 +668,92 @@ let editingId = null;
 let selectedColor = COLORS[0];
 let selectedIcon = ICONS[0];
 
-// STORAGE
+// ── Storage ────────────────────────────────────────────────────
 async function loadData() {
   try {
-    const ref = doc(db, "habittracker", DOC_ID);
-    const snap = await getDoc(ref);
-    if (snap.exists()) {
-      const data = snap.data();
-      habits = data.habits || [];
-      checks = data.checks || {};
+    if (db) {
+      const snap = await db.collection('habittracker').doc(DOC_ID).get();
+      if (snap.exists) {
+        const data = snap.data();
+        habits = data.habits || [];
+        checks = data.checks || {};
+        return;
+      }
     }
   } catch(e) {
-    console.log('load error', e);
-    try { const h = localStorage.getItem('ht_habits'); if (h) habits = JSON.parse(h); } catch(_){}
-    try { const c = localStorage.getItem('ht_checks'); if (c) checks = JSON.parse(c); } catch(_){}
+    console.log('Firebase load error, using localStorage', e);
   }
+  try { const h = localStorage.getItem('ht_habits'); if (h) habits = JSON.parse(h); } catch(_){}
+  try { const c = localStorage.getItem('ht_checks'); if (c) checks = JSON.parse(c); } catch(_){}
 }
 
 let saveTimer;
-async function saveData() {
+function saveData() {
   clearTimeout(saveTimer);
-  saveTimer = setTimeout(async () => {
+  saveTimer = setTimeout(async function() {
     try {
-      const ref = doc(db, "habittracker", DOC_ID);
-      await setDoc(ref, { habits, checks });
+      if (db) {
+        await db.collection('habittracker').doc(DOC_ID).set({ habits: habits, checks: checks });
+      }
       localStorage.setItem('ht_habits', JSON.stringify(habits));
       localStorage.setItem('ht_checks', JSON.stringify(checks));
     } catch(e) {
-      console.log('save error', e);
-      showToast('Erro ao salvar ⚠️');
+      console.log('Save error:', e);
+      // fallback to localStorage only
+      try {
+        localStorage.setItem('ht_habits', JSON.stringify(habits));
+        localStorage.setItem('ht_checks', JSON.stringify(checks));
+      } catch(_){}
     }
   }, 600);
 }
 
-// DATES
+// ── Dates ──────────────────────────────────────────────────────
 function today() { return dateStr(new Date()); }
 function dateStr(d) { return d.toISOString().split('T')[0]; }
-function addDays(d, n) { const r = new Date(d); r.setDate(r.getDate() + n); return r; }
+function addDays(d, n) { var r = new Date(d); r.setDate(r.getDate() + n); return r; }
 
 function getWeekDates(offset) {
-  const now = new Date();
-  const day = now.getDay();
-  const monday = addDays(now, -day + 1 + offset * 7);
-  return Array.from({length: 7}, (_, i) => addDays(monday, i));
+  var now = new Date();
+  var day = now.getDay();
+  var monday = addDays(now, (day === 0 ? -6 : 1 - day) + offset * 7);
+  return Array.from({length: 7}, function(_, i) { return addDays(monday, i); });
 }
 function getMonthDates(offset) {
-  const now = new Date();
-  const d = new Date(now.getFullYear(), now.getMonth() + offset, 1);
+  var now = new Date();
+  var d = new Date(now.getFullYear(), now.getMonth() + offset, 1);
   return { year: d.getFullYear(), month: d.getMonth() };
 }
 function getYearDates(offset) { return new Date().getFullYear() + offset; }
 
 function formatWeekLabel(dates) {
-  const opts = { day: '2-digit', month: '2-digit' };
+  var opts = { day: '2-digit', month: '2-digit' };
   return dates[0].toLocaleDateString('pt-BR', opts) + ' ~ ' + dates[6].toLocaleDateString('pt-BR', opts);
 }
 function formatMonthLabel(year, month) {
-  const names = ['jan.','fev.','mar.','abr.','mai.','jun.','jul.','ago.','set.','out.','nov.','dez.'];
+  var names = ['jan.','fev.','mar.','abr.','mai.','jun.','jul.','ago.','set.','out.','nov.','dez.'];
   return year + ' ' + names[month];
 }
 
-// VIEW
+// ── Navigation ─────────────────────────────────────────────────
 function switchView(v) {
   currentView = v;
   currentOffset = 0;
-  document.querySelectorAll('.view-tab').forEach(function(t){ t.classList.toggle('active', t.dataset.view === v); });
+  document.querySelectorAll('.view-tab').forEach(function(t) {
+    t.classList.toggle('active', t.dataset.view === v);
+  });
   render();
 }
 
-function navigate(dir) { currentOffset += dir; render(); }
+function navigate(dir) {
+  currentOffset += dir;
+  render();
+}
 
-// RENDER
+// ── Render ─────────────────────────────────────────────────────
 function render() {
-  const container = document.getElementById('habits-container');
-  const label = document.getElementById('period-label');
+  var container = document.getElementById('habits-container');
+  var label = document.getElementById('period-label');
   if (!habits.length) {
     container.innerHTML = '<div class="empty-state"><div class="empty-emoji">🌱</div><div class="empty-title">Nenhum hábito ainda!</div><div class="empty-sub">Crie seu primeiro hábito e comece sua jornada.</div><button class="btn-add-habit" onclick="openAddModal()">+ Criar Hábito</button></div>';
     label.textContent = '—';
@@ -824,39 +764,35 @@ function render() {
   else renderYear(container, label);
 }
 
-// WEEK VIEW
+// ── Week View ──────────────────────────────────────────────────
 function renderWeek(container, label) {
-  const dates = getWeekDates(currentOffset);
+  var dates = getWeekDates(currentOffset);
   label.textContent = formatWeekLabel(dates);
-  const t = today();
-  const dayNames = ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  var t = today();
+  var dayNames = ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
   container.innerHTML = '';
 
   habits.forEach(function(habit) {
-    const totalDone = Object.keys(checks).filter(function(k){ return k.startsWith(habit.id + '_'); }).length;
-    const weekDone = dates.filter(function(d){ return !!checks[habit.id + '_' + dateStr(d)]; }).length;
+    var totalDone = Object.keys(checks).filter(function(k) { return k.startsWith(habit.id + '_'); }).length;
+    var weekDone = dates.filter(function(d) { return !!checks[habit.id + '_' + dateStr(d)]; }).length;
 
-    const card = document.createElement('div');
+    var card = document.createElement('div');
     card.className = 'habit-card';
     card.style.setProperty('--habit-color', habit.color);
 
-    // headers row
-    let headersHTML = '';
-    dayNames.forEach(function(n){ headersHTML += '<div class="week-day-header">' + n + '</div>'; });
+    var headersHTML = '';
+    dayNames.forEach(function(n) { headersHTML += '<div class="week-day-header">' + n + '</div>'; });
 
-    // day cells
-    let cellsHTML = '';
+    var cellsHTML = '';
     dates.forEach(function(d) {
-      const ds = dateStr(d);
-      const isToday = ds === t;
-      const isDone = !!checks[habit.id + '_' + ds];
-      let cls = 'day-cell';
-      if (isDone) cls += ' done';
-      if (isToday) cls += ' today';
-      cellsHTML += '<div class="' + cls + '" onclick="toggleCheck('' + habit.id + '','' + ds + '',this)" style="--habit-color:' + habit.color + '">' + d.getDate() + '</div>';
+      var ds = dateStr(d);
+      var isToday = ds === t;
+      var isDone = !!checks[habit.id + '_' + ds];
+      var cls = 'day-cell' + (isDone ? ' done' : '') + (isToday ? ' today' : '');
+      cellsHTML += '<div class="' + cls + '" onclick="toggleCheck(\'' + habit.id + '\',\'' + ds + '\',this)" style="--habit-color:' + habit.color + '">' + d.getDate() + '</div>';
     });
 
-    const weekStatus = weekDone === 7
+    var weekStatus = weekDone === 7
       ? '<span class="perfect-badge">🏆 PERFEITO</span>'
       : (weekDone + '/7 esta semana');
 
@@ -865,7 +801,7 @@ function renderWeek(container, label) {
         '<div class="habit-name"><span class="habit-icon">' + habit.icon + '</span>' + habit.name + '</div>' +
         '<div style="display:flex;align-items:center;gap:8px">' +
           '<span class="stat-days">⭐ ' + totalDone + 'd</span>' +
-          '<button class="btn-icon" onclick="openEditModal('' + habit.id + '')" title="Editar">✏️</button>' +
+          '<button class="btn-icon" onclick="openEditModal(\'' + habit.id + '\')" title="Editar">✏️</button>' +
         '</div>' +
       '</div>' +
       '<div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:6px">' + headersHTML + '</div>' +
@@ -876,49 +812,47 @@ function renderWeek(container, label) {
   });
 }
 
-// MONTH VIEW
+// ── Month View ─────────────────────────────────────────────────
 function renderMonth(container, label) {
-  const info = getMonthDates(currentOffset);
-  const year = info.year, month = info.month;
+  var info = getMonthDates(currentOffset);
+  var year = info.year, month = info.month;
   label.textContent = formatMonthLabel(year, month);
-  const t = today();
-  const daysInMonth = new Date(year, month + 1, 0).getDate();
-  const firstDay = new Date(year, month, 1).getDay();
-  const startOffset = firstDay === 0 ? 6 : firstDay - 1;
-  const dayNames = ['S','T','Q','Q','S','S','D'];
+  var t = today();
+  var daysInMonth = new Date(year, month + 1, 0).getDate();
+  var firstDay = new Date(year, month, 1).getDay();
+  var startOffset = firstDay === 0 ? 6 : firstDay - 1;
+  var dayNames = ['S','T','Q','Q','S','S','D'];
   container.innerHTML = '';
 
   habits.forEach(function(habit) {
-    let totalDone = 0;
-    for (let i = 1; i <= daysInMonth; i++) {
+    var totalDone = 0;
+    for (var i = 1; i <= daysInMonth; i++) {
       if (checks[habit.id + '_' + dateStr(new Date(year, month, i))]) totalDone++;
     }
-    const pct = Math.round((totalDone / daysInMonth) * 100);
-    const perfect = totalDone === daysInMonth;
+    var pct = Math.round((totalDone / daysInMonth) * 100);
+    var perfect = totalDone === daysInMonth;
 
-    const card = document.createElement('div');
+    var card = document.createElement('div');
     card.className = 'habit-card';
     card.style.setProperty('--habit-color', habit.color);
 
-    let headersHTML = '';
-    dayNames.forEach(function(n){ headersHTML += '<div class="week-day-header">' + n + '</div>'; });
+    var headersHTML = '';
+    dayNames.forEach(function(n) { headersHTML += '<div class="week-day-header">' + n + '</div>'; });
 
-    let cellsHTML = '';
-    for (let i = 0; i < startOffset; i++) cellsHTML += '<div class="month-day-cell empty"></div>';
-    for (let i = 1; i <= daysInMonth; i++) {
-      const ds = dateStr(new Date(year, month, i));
-      const isDone = !!checks[habit.id + '_' + ds];
-      const isToday = ds === t;
-      let cls = 'month-day-cell';
-      if (isDone) cls += ' done';
-      if (isToday) cls += ' today';
-      cellsHTML += '<div class="' + cls + '" onclick="toggleCheck('' + habit.id + '','' + ds + '',this)" style="--habit-color:' + habit.color + '">' + i + '</div>';
+    var cellsHTML = '';
+    for (var j = 0; j < startOffset; j++) cellsHTML += '<div class="month-day-cell empty"></div>';
+    for (var i = 1; i <= daysInMonth; i++) {
+      var ds = dateStr(new Date(year, month, i));
+      var isDone = !!checks[habit.id + '_' + ds];
+      var isToday = ds === t;
+      var cls = 'month-day-cell' + (isDone ? ' done' : '') + (isToday ? ' today' : '');
+      cellsHTML += '<div class="' + cls + '" onclick="toggleCheck(\'' + habit.id + '\',\'' + ds + '\',this)" style="--habit-color:' + habit.color + '">' + i + '</div>';
     }
 
     card.innerHTML =
       '<div class="habit-header">' +
         '<div class="habit-name"><span class="habit-icon">' + habit.icon + '</span>' + habit.name + '</div>' +
-        '<button class="btn-icon" onclick="openEditModal('' + habit.id + '')">✏️</button>' +
+        '<button class="btn-icon" onclick="openEditModal(\'' + habit.id + '\')">✏️</button>' +
       '</div>' +
       '<div class="month-grid">' + headersHTML + cellsHTML + '</div>' +
       '<div class="month-card-footer">' +
@@ -931,21 +865,21 @@ function renderMonth(container, label) {
   });
 }
 
-// YEAR VIEW
+// ── Year View ──────────────────────────────────────────────────
 function renderYear(container, label) {
-  const year = getYearDates(currentOffset);
+  var year = getYearDates(currentOffset);
   label.textContent = String(year);
-  const t = today();
-  const totalDays = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0 ? 366 : 365;
+  var t = today();
+  var totalDays = ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) ? 366 : 365;
   container.innerHTML = '';
 
   habits.forEach(function(habit) {
-    let totalDone = Object.keys(checks).filter(function(k){
+    var totalDone = Object.keys(checks).filter(function(k) {
       return k.startsWith(habit.id + '_') && k.indexOf('_' + year + '-') !== -1;
     }).length;
-    const pct = Math.round((totalDone / totalDays) * 100);
+    var pct = Math.round((totalDone / totalDays) * 100);
 
-    const wrap = document.createElement('div');
+    var wrap = document.createElement('div');
     wrap.className = 'year-habit';
     wrap.style.setProperty('--habit-color', habit.color);
     wrap.innerHTML =
@@ -954,32 +888,30 @@ function renderYear(container, label) {
         '<div style="display:flex;align-items:center;gap:10px">' +
           '<span class="stat-pct">🟢 ' + pct + '%</span>' +
           '<span class="stat-days">⭐ ' + totalDone + 'd</span>' +
-          '<button class="btn-icon" onclick="openEditModal('' + habit.id + '')">✏️</button>' +
+          '<button class="btn-icon" onclick="openEditModal(\'' + habit.id + '\')">✏️</button>' +
         '</div>' +
       '</div>' +
       '<div class="year-grid-wrap"><div class="year-grid" id="year-' + habit.id + '"></div></div>';
 
     container.appendChild(wrap);
 
-    const grid = wrap.querySelector('#year-' + habit.id);
-    const jan1 = new Date(year, 0, 1);
-    const startDow = jan1.getDay();
-    let cellsHTML = '';
+    var grid = wrap.querySelector('#year-' + habit.id);
+    var jan1 = new Date(year, 0, 1);
+    var startDow = jan1.getDay();
+    var cellsHTML = '';
 
-    for (let col = 0; col < 53; col++) {
-      for (let row = 0; row < 7; row++) {
-        const dayNum = col * 7 + row - startDow;
+    for (var col = 0; col < 53; col++) {
+      for (var row = 0; row < 7; row++) {
+        var dayNum = col * 7 + row - startDow;
         if (dayNum < 0 || dayNum >= totalDays) {
           cellsHTML += '<div style="grid-column:' + (col+1) + ';grid-row:' + (row+1) + ';width:10px;height:10px"></div>';
         } else {
-          const d = new Date(year, 0, dayNum + 1);
-          const ds = dateStr(d);
-          const isDone = !!checks[habit.id + '_' + ds];
-          const isToday = ds === t;
-          let cls = 'year-cell';
-          if (isDone) cls += ' done';
-          if (isToday) cls += ' today';
-          cellsHTML += '<div class="' + cls + '" style="grid-column:' + (col+1) + ';grid-row:' + (row+1) + ';--habit-color:' + habit.color + '" onclick="toggleCheck('' + habit.id + '','' + ds + '',this)" title="' + ds + '"></div>';
+          var d = new Date(year, 0, dayNum + 1);
+          var ds = dateStr(d);
+          var isDone = !!checks[habit.id + '_' + ds];
+          var isToday = ds === t;
+          var cls = 'year-cell' + (isDone ? ' done' : '') + (isToday ? ' today' : '');
+          cellsHTML += '<div class="' + cls + '" style="grid-column:' + (col+1) + ';grid-row:' + (row+1) + ';--habit-color:' + habit.color + '" onclick="toggleCheck(\'' + habit.id + '\',\'' + ds + '\',this)" title="' + ds + '"></div>';
         }
       }
     }
@@ -987,9 +919,9 @@ function renderYear(container, label) {
   });
 }
 
-// TOGGLE CHECK
+// ── Toggle Check ───────────────────────────────────────────────
 function toggleCheck(habitId, ds, el) {
-  const key = habitId + '_' + ds;
+  var key = habitId + '_' + ds;
   if (checks[key]) {
     delete checks[key];
     el.classList.remove('done');
@@ -1001,9 +933,8 @@ function toggleCheck(habitId, ds, el) {
   }
   saveData();
 }
-window.toggleCheck = toggleCheck;
 
-// MODAL
+// ── Modal ──────────────────────────────────────────────────────
 function openAddModal() {
   editingId = null;
   selectedColor = COLORS[0];
@@ -1015,10 +946,9 @@ function openAddModal() {
   buildColorPicker();
   document.getElementById('modal-overlay').classList.add('open');
 }
-window.openAddModal = openAddModal;
 
 function openEditModal(id) {
-  const h = habits.find(function(x){ return x.id === id; });
+  var h = habits.find(function(x) { return x.id === id; });
   if (!h) return;
   editingId = id;
   selectedColor = h.color;
@@ -1030,43 +960,41 @@ function openEditModal(id) {
   buildColorPicker();
   document.getElementById('modal-overlay').classList.add('open');
 }
-window.openEditModal = openEditModal;
 
-function closeModal() { document.getElementById('modal-overlay').classList.remove('open'); }
-window.closeModal = closeModal;
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+}
 
-function closeModalOutside(e) { if (e.target === document.getElementById('modal-overlay')) closeModal(); }
-window.closeModalOutside = closeModalOutside;
+function closeModalOutside(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModal();
+}
 
 function buildColorPicker() {
-  const cp = document.getElementById('color-picker');
-  let html = '';
+  var cp = document.getElementById('color-picker');
+  var html = '';
   COLORS.forEach(function(c) {
-    html += '<div class="color-swatch' + (c === selectedColor ? ' selected' : '') + '" style="background:' + c + '" onclick="selectColor('' + c + '')"></div>';
+    html += '<div class="color-swatch' + (c === selectedColor ? ' selected' : '') + '" style="background:' + c + '" onclick="selectColor(\'' + c + '\')"></div>';
   });
   cp.innerHTML = html;
 }
 
 function buildIconPicker() {
-  const ip = document.getElementById('icon-picker');
-  let html = '';
+  var ip = document.getElementById('icon-picker');
+  var html = '';
   ICONS.forEach(function(ic) {
-    html += '<button class="icon-btn' + (ic === selectedIcon ? ' selected' : '') + '" onclick="selectIcon('' + ic + '')">' + ic + '</button>';
+    html += '<button class="icon-btn' + (ic === selectedIcon ? ' selected' : '') + '" onclick="selectIcon(\'' + ic + '\')">' + ic + '</button>';
   });
   ip.innerHTML = html;
 }
 
 function selectColor(c) { selectedColor = c; buildColorPicker(); }
-window.selectColor = selectColor;
-
 function selectIcon(ic) { selectedIcon = ic; buildIconPicker(); }
-window.selectIcon = selectIcon;
 
 function saveHabit() {
-  const name = document.getElementById('input-name').value.trim();
+  var name = document.getElementById('input-name').value.trim();
   if (!name) { showToast('Digite um nome! ✏️'); return; }
   if (editingId) {
-    const h = habits.find(function(x){ return x.id === editingId; });
+    var h = habits.find(function(x) { return x.id === editingId; });
     if (h) { h.name = name; h.color = selectedColor; h.icon = selectedIcon; }
   } else {
     habits.push({ id: 'h' + Date.now(), name: name, color: selectedColor, icon: selectedIcon, createdAt: today() });
@@ -1076,44 +1004,30 @@ function saveHabit() {
   render();
   showToast(editingId ? 'Hábito atualizado! ✨' : 'Hábito criado! 🌱');
 }
-window.saveHabit = saveHabit;
 
 function deleteHabit() {
   if (!editingId) return;
   if (!confirm('Remover este hábito e todos os seus registros?')) return;
-  habits = habits.filter(function(h){ return h.id !== editingId; });
-  Object.keys(checks).forEach(function(k){ if (k.startsWith(editingId + '_')) delete checks[k]; });
+  habits = habits.filter(function(h) { return h.id !== editingId; });
+  Object.keys(checks).forEach(function(k) { if (k.startsWith(editingId + '_')) delete checks[k]; });
   saveData();
   closeModal();
   render();
   showToast('Hábito removido 🗑️');
 }
-window.deleteHabit = deleteHabit;
 
-function navigate(dir) { currentOffset += dir; render(); }
-window.navigate = navigate;
-
-function switchView(v) {
-  currentView = v;
-  currentOffset = 0;
-  document.querySelectorAll('.view-tab').forEach(function(t){ t.classList.toggle('active', t.dataset.view === v); });
-  render();
-}
-window.switchView = switchView;
-
-let toastTimer;
+// ── Toast ──────────────────────────────────────────────────────
+var toastTimer;
 function showToast(msg) {
-  const t = document.getElementById('toast');
+  var t = document.getElementById('toast');
   t.textContent = msg;
   t.classList.add('show');
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 2000);
+  toastTimer = setTimeout(function() { t.classList.remove('show'); }, 2000);
 }
 
-(async function init() {
-  await loadData();
-  render();
-})();
+// ── Init ───────────────────────────────────────────────────────
+loadData().then(function() { render(); });
 </script>
 </body>
 </html>
